@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 
 app = Flask(__name__)
 
-@app.route('/get_paste', methods=['GET'])
+@app.route('/bypass', methods=['GET'])
 def get_paste():
     paste_url = request.args.get('url')
     if not paste_url:
